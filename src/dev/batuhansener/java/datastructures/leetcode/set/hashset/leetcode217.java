@@ -1,5 +1,6 @@
-package dev.batuhansener.java.datastructures.set.hashset;
+package dev.batuhansener.java.datastructures.leetcode.set.hashset;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,13 +8,14 @@ public class leetcode217 {
 
     public boolean containsDuplicate(int[] nums){
 
+        Collection <Character> control = new HashSet<>();
+
         Set<Integer> numsTest = new HashSet<>();
 
         for (int a : nums){
-            if (numsTest.contains(a)){
+            if (!numsTest.add(a)){
                 return true;
             }
-            numsTest.add(a);
         }
         return false;
     }
