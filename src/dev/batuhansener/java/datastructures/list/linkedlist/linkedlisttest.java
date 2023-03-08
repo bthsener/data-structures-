@@ -21,6 +21,5 @@ public class linkedlisttest {
         System.out.println();
 
         linkedList.tersCevirYaz();
-
     }
 }
