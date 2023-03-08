@@ -8,8 +8,6 @@ public class leetcode217 {
 
     public boolean containsDuplicate(int[] nums){
 
-        Collection <Character> control = new HashSet<>();
-
         Set<Integer> numsTest = new HashSet<>();
 
         for (int a : nums){

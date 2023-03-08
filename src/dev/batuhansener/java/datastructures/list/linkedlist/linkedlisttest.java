@@ -13,9 +13,14 @@ public class linkedlisttest {
         linkedList.indiseEkle(80,2);
         linkedList.indiseEkle(999,1);
 
-
+        linkedList.bastanSil();
+        linkedList.sondanSil();
 
         linkedList.listele();
+
+        System.out.println();
+
+        linkedList.tersCevirYaz();
 
     }
 }
