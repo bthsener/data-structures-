@@ -16,10 +16,16 @@ public class linkedlisttest {
         linkedList.bastanSil();
         linkedList.sondanSil();
 
+        linkedList.indisiSil(1);
+
         linkedList.listele();
+
+
 
         System.out.println();
 
-        linkedList.tersCevirYaz();
+
+
+        //linkedList.tersCevirYaz();
     }
 }

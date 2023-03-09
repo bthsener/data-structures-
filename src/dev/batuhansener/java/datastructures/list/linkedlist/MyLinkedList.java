@@ -101,6 +101,38 @@ public class MyLinkedList{
         }
     }
 
+    public void indisiSil(int indis){
+        if (doluMu()&&indis>=0){
+            Node deneme = bas;
+            Node prev = null;
+            Node seq = deneme;
+            int counter = 0;
+            if (indis == 0){
+                bas = bas.next;
+                deneme = null;
+            }else{
+                while (counter<=indis&&seq!=null){
+                    prev = deneme;
+                    deneme = seq;
+                    seq = deneme.next;
+                    counter++;
+                }
+                if (indis>=counter){
+                    System.out.println("o index bos zaten");
+                }
+                else{if (seq==null){
+                    prev.next = null;
+                    son = prev;
+                    deneme = null;
+                }if (seq!=null){
+                    prev.next = seq;
+                    deneme.next = null;
+                    deneme = null;
+                }}
+            }
+        }
+    }
+
     public void tersCevirYaz(){
         Node onceki = null;
         Node sonraki = null;
