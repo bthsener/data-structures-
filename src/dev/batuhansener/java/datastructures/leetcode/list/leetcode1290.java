@@ -1,5 +1,7 @@
 package dev.batuhansener.java.datastructures.leetcode.list;
 
+import java.util.ArrayList;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

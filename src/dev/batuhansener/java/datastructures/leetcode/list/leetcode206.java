@@ -10,13 +10,14 @@ package dev.batuhansener.java.datastructures.leetcode.list;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
 class leetcode206 {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode seq = null;
         ListNode current = head;
 
-        while(curren!=null){
+        while(current!=null){
             seq = current.next;
             current.next = prev;
             prev = current;
